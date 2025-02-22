@@ -1,0 +1,69 @@
+/* 여기에 스타일을 구현해 주세요 */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background-color: #ffffff;
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  /* 불릿이 없어지면서 생긴 padding을 해결하기 위해 넣은 코드 */
+  padding-left: 0;
+}
+
+.faceFrame {
+  display: inline-block;
+  position: relative;
+  /* 불릿 없애기 */
+  list-style-type: none;
+  padding: 10px 10px;
+}
+
+.faceFrame img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+
+.circle {
+  position: absolute;
+  display: inline-block;
+  /* relative를 기준으로 바텀에서 11px 라이트 11px */
+  bottom: 11px;
+  right: 11px;
+  box-sizing: border-box;
+  width: 17.78px;
+  height: 17.78px;
+  border-radius: 50%;
+  border-style: solid;
+  stroke-width: 1px;
+  /* 테두리 흰색 선 삽입 */
+  border-color: #ffffff;
+}
+
+.offline {
+  background-color: #dbdbdb;
+}
+
+.online {
+  background-color: #4cfe88;
+}
+
+/* 추후에 오프라인이나 자리비움이 생기면 바로 추가 할 수 있게끔 class를 분리 해보았습니다. */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* 구형 브라우저를 위해 사용 */
+  clip-path: polygon(0 0, 0 0, 0 0); /* inset(50%) 와 동일한 표현 */
+  border: 0;
+}
