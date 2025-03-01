@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타이틀</title>
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon/likelion.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="/src/login/styles/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 로고를 상단 중앙에 배치 -->
+      <div class="logo-container">
+        <a
+          href="https://www.naver.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img src="/src/login/media/naver-logo.svg" alt="네이버 로고"
+        /></a>
+      </div>
+      <!-- 로그인 폼 -->
+      <div class="login-form">
+        <form>
+          <input
+            type="email"
+            class="id"
+            placeholder="아이디(이메일)"
+            required
+            aria-label="아이디 입력칸"
+          />
+          <input
+            type="password"
+            class="password"
+            placeholder="비밀번호"
+            required
+            aria-label="비밀번호 입력칸"
+          />
+          <button type="submit" class="login-button" aria-label="로그인 버튼">
+            로그인
+          </button>
+          <div class="login-checkbox-form">
+            <button type="button" class="login-check-button">
+              <img
+                src="/src/login/media/naver-checkbox(unchecked.svg"
+                alt="로그인 상태 유지 활성화 버튼"
+              />
+              <span>로그인 상태 유지</span>
+            </button>
+            <div class="ip-security-form">
+              <button type="button" class="ip-security-button">
+                <a
+                  href="./pages/ip-security.png"
+                  aria-label="네이버 IP보안 안내창"
+                  target="_blank"
+                  ><span>IP 보안</span></a
+                >
+                <span class="ip-security-status-default">OFF</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
