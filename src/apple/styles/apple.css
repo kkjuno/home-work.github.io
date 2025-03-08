@@ -12,71 +12,71 @@
 
   .product01 {
     background-image: image-set(
-      url(.\src\apple\products\ipad_pro.jpeg),
-      url(./src/apple/products/ipad_pro_2x.jpeg)
+      url(/src/apple/products/ipad_pro.jpeg),
+      url(/src/apple/products/ipad_pro_2x.jpeg)
     );
 
     @media (min-width: 64rem) {
       background-image: image-set(
-        url(./src/apple/products/ipad_pro_wide.jpeg),
-        url(./src/apple/products/ipad_pro_wide_2x.jpeg)
+        url(/src/apple/products/ipad_pro_wide.jpeg),
+        url(/src/apple/products/ipad_pro_wide_2x.jpeg)
       );
     }
   }
 
   .product02 {
     background-image: image-set(
-      url(./src/apple/products/ipad_air.jpeg),
-      url(./src/apple/products/ipad_air_2x.jpeg)
+      url(/src/apple/products/ipad_air.jpeg),
+      url(/src/apple/products/ipad_air_2x.jpeg)
     );
 
     @media (min-width: 64rem) {
       background-image: image-set(
-        url(./src/apple/products/ipad_air_wide.jpeg),
-        url(./src/apple/products/ipad_air_wide_2x.jpeg)
+        url(/src/apple/products/ipad_air_wide.jpeg),
+        url(/src/apple/products/ipad_air_wide_2x.jpeg)
       );
     }
   }
 
   .product03 {
     background-image: image-set(
-      url(./src/apple/products/iphone15_pro.jpeg),
-      url(./src/apple/products/iphone15_pro_2x.jpeg)
+      url(/src/apple/products/iphone15_pro.jpeg),
+      url(/src/apple/products/iphone15_pro_2x.jpeg)
     );
 
     @media (min-width: 64rem) {
       background-image: image-set(
-        url(./src/apple/products/iphone15_pro_wide.jpeg),
-        url(./src/apple/products/iphone15_pro_wide_2x.jpeg)
+        url(/src/apple/products/iphone15_pro_wide.jpeg),
+        url(/src/apple/products/iphone15_pro_wide_2x.jpeg)
       );
     }
   }
 
   .product04 {
     background-image: image-set(
-      url(./src/apple/products/iphone15.jpeg),
-      url(./src/apple/products/iphone15_2x.jpeg)
+      url(/src/apple/products/iphone15.jpeg),
+      url(/src/apple/products/iphone15_2x.jpeg)
     );
   }
 
   .product05 {
     background-image: image-set(
-      url(./src/apple/products/apple_watch.jpeg),
-      url(./src/apple/products/apple_watch_2x.jpeg)
+      url(/src/apple/products/apple_watch.jpeg),
+      url(/src/apple/products/apple_watch_2x.jpeg)
     );
   }
 
   .product06 {
     background-image: image-set(
-      url(./src/apple/products/macbook_air.jpeg),
-      url(./src/apple/products/macbook_air_2x.jpeg)
+      url(/src/apple/products/macbook_air.jpeg),
+      url(/src/apple/products/macbook_air_2x.jpeg)
     );
   }
 
   .product07 {
     background-image: image-set(
-      url(./src/apple/products/airpods_pro.jpeg),
-      url(./src/apple/products/airpods_pro_2x.jpeg)
+      url(/src/apple/products/airpods_pro.jpeg),
+      url(/src/apple/products/airpods_pro_2x.jpeg)
     );
   }
 
