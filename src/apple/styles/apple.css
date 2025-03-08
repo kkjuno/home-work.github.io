@@ -1,0 +1,98 @@
+@import "./card-component.css";
+@import "/src/common/a11y.css";
+
+.main {
+  display: grid;
+  margin-block-start: var(--large-spacing);
+  gap: var(--small-spacing);
+  grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: 64rem) {
+    margin-block-start: var(--extra-large-spacing);
+  }
+
+  .product01 {
+    background-image: image-set(
+      url(/apple/products/ipad_pro.jpeg),
+      url(/apple/products/ipad_pro_2x.jpeg)
+    );
+
+    @media (min-width: 64rem) {
+      background-image: image-set(
+        url(/apple/products/ipad_pro_wide.jpeg),
+        url(/apple/products/ipad_pro_wide_2x.jpeg)
+      );
+    }
+  }
+
+  .product02 {
+    background-image: image-set(
+      url(/apple/products/ipad_air.jpeg),
+      url(/apple/products/ipad_air_2x.jpeg)
+    );
+
+    @media (min-width: 64rem) {
+      background-image: image-set(
+        url(/apple/products/ipad_air_wide.jpeg),
+        url(/apple/products/ipad_air_wide_2x.jpeg)
+      );
+    }
+  }
+
+  .product03 {
+    background-image: image-set(
+      url(/apple/products/iphone15_pro.jpeg),
+      url(/apple/products/iphone15_pro_2x.jpeg)
+    );
+
+    @media (min-width: 64rem) {
+      background-image: image-set(
+        url(/apple/products/iphone15_pro_wide.jpeg),
+        url(/apple/products/iphone15_pro_wide_2x.jpeg)
+      );
+    }
+  }
+
+  .product04 {
+    background-image: image-set(
+      url(/apple/products/iphone15.jpeg),
+      url(/apple/products/iphone15_2x.jpeg)
+    );
+  }
+
+  .product05 {
+    background-image: image-set(
+      url(/apple/products/apple_watch.jpeg),
+      url(/apple/products/apple_watch_2x.jpeg)
+    );
+  }
+
+  .product06 {
+    background-image: image-set(
+      url(/apple/products/macbook_air.jpeg),
+      url(/apple/products/macbook_air_2x.jpeg)
+    );
+  }
+
+  .product07 {
+    background-image: image-set(
+      url(/apple/products/airpods_pro.jpeg),
+      url(/apple/products/airpods_pro_2x.jpeg)
+    );
+  }
+
+  /* 직계 자손 컴포넌트에게 모두  */
+  > * {
+    block-size: var(--size);
+    grid-column: span 2;
+  }
+
+  @media (min-width: 64rem) {
+    .product04,
+    .product05,
+    .product06,
+    .product07 {
+      grid-column: span 1;
+    }
+  }
+}

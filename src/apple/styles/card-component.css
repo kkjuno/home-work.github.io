@@ -1,0 +1,78 @@
+@import "./reset.css";
+@import "./theme.css";
+@import "./base.css";
+
+.card-component {
+  display: grid;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 0;
+  background-size: cover;
+
+  .content-wrap {
+    grid-area: 1 / 1;
+  }
+}
+
+.content-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: var(--black-300);
+  block-size: var(--size);
+  inline-size: 100%;
+  padding-block-start: var(--large-spacing);
+  gap: var(--small-spacing); /* 요소들 사이의 간격 조정 */
+
+  @media (min-width: 1024px) {
+    padding-block-start: var(--extra-large-spacing);
+  }
+}
+
+.caption {
+  margin-block-start: var(--x-small-spacing);
+  font-size: var(--small-text);
+  color: var(--gray);
+}
+
+.sub-title {
+  text-align: center;
+  font-size: var(--base-text);
+
+  @media (min-width: 1024px) {
+    font-size: var(--medium-text);
+    br {
+      display: none;
+    }
+  }
+}
+
+.product-title {
+  font-size: var(--large-text);
+
+  @media (min-width: 1024px) {
+    font-size: var(--extra-large-text);
+  }
+}
+
+.button-wrap {
+  display: flex; /* 버튼을 가로로 정렬 */
+  gap: var(--base-spacing); /* 버튼 사이의 간격 설정 */
+  justify-content: center; /* 버튼을 가운데 정렬 (선택 사항) */
+}
+
+.button-wrap button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  outline: 0;
+  border: 0;
+  font-size: var(--x-small-text);
+  padding-block: var(--x-small-spacing);
+  padding-inline: var(--small-spacing);
+  border-radius: 2.5rem;
+
+  @media (min-width: 1024px) {
+    font-size: var(--xx-small-text);
+  }
+}
