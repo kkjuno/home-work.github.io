@@ -10,3 +10,5 @@
 - [3주 차 회고](./src/avaters/avatars.md)
 - [네이버 로그인 폼](./src/login/login.html)
 - [4주 차 회고](./src/login/login.md)
+- [5주차 과제](./src/apple/apple.html)
+- [4주 차 회고](./src/apple/apple.md)
