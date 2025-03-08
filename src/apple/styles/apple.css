@@ -12,7 +12,7 @@
 
   .product01 {
     background-image: image-set(
-      url(./src/apple/products/ipad_pro.jpeg),
+      url(.\src\apple\products\ipad_pro.jpeg),
       url(./src/apple/products/ipad_pro_2x.jpeg)
     );
 
